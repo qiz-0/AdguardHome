@@ -43,7 +43,7 @@ jobs:
 
           # Create final configuration file
           {
-            echo "# Create Date: $(date +"%Y-%m-%d %H:%M:%S")"
+            echo "# 最后更新: $(date +"%Y-%m-%d %H:%M:%S")"
             cat upstreams.txt
             printf "\n"
             cat gfwlist_AdguardHome.txt
@@ -63,7 +63,7 @@ jobs:
         env:
           GIT_NAME: github-actions[bot]
           GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-          REPO: github.com/rwx9032/AdguardHome
+          REPO: github.com/qiz-0/AdguardHome
           GH_TOKEN: ${{ secrets.GH_TOKEN_BLOG }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
